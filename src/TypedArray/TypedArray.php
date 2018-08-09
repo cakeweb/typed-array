@@ -43,10 +43,10 @@ abstract class TypedArray extends \ArrayObject
             );
         }
 
-        if (!class_exists($this->arrayType)) {
+        if (!class_exists($this->arrayType) && !interface_exists($this->arrayType)) {
             throw new \RuntimeException(
                 sprintf(
-                    '%s does not exist for %s::ARRAY_TYPE',
+                    'Class or interface %s does not exist for %s::ARRAY_TYPE',
                     $this->arrayType,
                     get_called_class()
                 )
