@@ -1,10 +1,14 @@
 {
-  "name": "rquadling/typed-array",
+  "name": "cakeweb/typed-array",
   "description": "A simple base class for strongly typed arrays",
   "authors": [
     {
       "name": "Richard Quadling",
       "email": "RQuadling@GMail.com"
+    },
+    {
+      "name": "Abraão Zaidan",
+      "email": "abraao@cakeweb.com.br"
     }
   ],
   "require": {
